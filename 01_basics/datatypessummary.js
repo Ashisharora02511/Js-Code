@@ -26,3 +26,19 @@ const myFunction=function(){
     console.log("hello world");
 }
 console.log(typeof myFunction)
+
+// primitive value are in stack ,Heap(non primitive )
+let username="ashish";
+let anothername=username;
+anothername="Manu arora";
+console.log(username);
+console.log(anothername);
+
+let userOne={
+    email:"Ashisharora555@gmail.com",
+    name:"Ashish"
+}
+let userTwo=userOne;
+userTwo.email="manuarora565@gmail.com"
+console.log(userTwo.email)
+console.log(userOne.email)
