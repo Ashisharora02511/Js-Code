@@ -1,0 +1,41 @@
+//singleton objects
+const tinderUser={}
+const newObj=new Object;
+console.log(tinderUser);
+console.log(newObj);
+
+const regularObject={
+    email:"ashisharora@gmail.com",
+    username:{
+        fullname:{
+            firstname:"Ashish",
+            lastname:"Arora"
+        }
+    }
+}
+//console.log(regularObject.username.fullname.firstname);
+const obj1 = {1: "a", 2: "b"};
+const obj2 = {3: "c", 4: "d"};
+//const obj3 = Object.assign({}, obj1, obj2);
+const obj3={...obj1,...obj2}
+
+// console.log(obj3);
+// console.log(Object.keys(obj1));
+// console.log(Object.values(obj2));
+// console.log(obj1.hasOwnProperty('3'));
+
+const course={
+    coursename:"chai and java scripts",
+    price:"free",
+    courseInstructor:"HItes Choudhary"
+}
+console.log(course.courseInstructor);
+const {courseInstructor:instructor}=course
+const {coursename}=course
+console.log(coursename);
+
+console.log(instructor);
+
+
+
+
